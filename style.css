@@ -3,20 +3,18 @@
 ---------------------------*/
 html {
     font-size: 100%;
+    min-height: 100%;
 }
 body {
     font-family: 'M PLUS 1p', sans-serif;
-    background: linear-gradient(#2809f2,#97cdf3);
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #2809f2,#97cdf3);
 }
 h1,
 h2 {
     text-align: center;
 }
 h2 {
-    width: 90%;
     margin: 10px;
-    margin-left: 45px;
     letter-spacing: 2rem;
     text-indent: 2rem;
     border-bottom: 1px solid #b8b4b4;
@@ -34,8 +32,7 @@ a {
     color: #f20c10;
     background-color: #f1c8ad;
     list-style: none;
-    width: 90%;
-    margin: 20px 0 20px 45px;
+    margin: 20px 0;
     padding: 10px 10px;
     border-radius: 5px;
 }
@@ -49,6 +46,9 @@ a {
     margin: 10px 0;
     border-radius: 5px;
 }
+.form-area {
+    padding: 30px;
+}
 .title {
     color: #ffffff;
 }
@@ -56,16 +56,13 @@ label {
     display: block;
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 45px;
 }   
 input[type="text"],
 input[type="date"] {
     background-color: #ffffff;
     border: 1px solid #b8b4b4;
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
-    margin-left: 45px;
-    padding: 5px 0;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -81,12 +78,9 @@ input[type="date"] {
 .update-btn {
     color: #ffffff;
     background-color: #f30dc5;
-    width: 90%;
     letter-spacing: 2rem;
     text-indent: 2rem;
     margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 45px;
     padding: 5px 0;
     border-radius: 5px;
 }
@@ -95,27 +89,19 @@ input[type="date"] {
     background-color: #b069a2;
 }
 /* table全体 */
-table {
-    width: 89%;
+.plan-list {
+    text-align: left;
+    width: 100%;
     height: 100%;
-}
-th {
-    height: 40px;
-}
-td {
-    height: 40px;
+    padding: 10px 40px;
 }
 /* 完了期限が切れた時の日付の色 */
 .expired {
     color: #e70b0f;
 }
 /* table 幅 */
-.plan-list {
-    text-align: left;
-    margin: 10px 50px;
-}
 .plan-title {
-    width: 55%;
+    width: 50%;
 }
 .plan-due-date {
     width: 15%;
@@ -125,7 +111,7 @@ td {
 }
 .done-link-area,
 .edit-link-area,
-.delete-link-are {
+.delete-link-area {
     width: 10%;
 }
 
@@ -163,16 +149,16 @@ td {
     background-color: #8cbf8a;
 }
 /* 編集ページ */
+.edit-area {
+    padding: 30px;
+}
 .return-btn {
     display: block;
     color: #ffffff;
     background-color: #260ade;
-    width: 90%;
     letter-spacing: 2rem;
     text-indent: 2rem;
     margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 45px;
     padding: 5px 0;
     border-radius: 5px;
 }

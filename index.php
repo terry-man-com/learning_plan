@@ -78,7 +78,7 @@ $complete_tasks = find_complete_tasks();
             <table class="plan-list">
                 <thead>
                     <tr>
-                        <th class="plan-title">学習内容</th>'
+                        <th class="plan-title">学習内容</th>
                         <th class="plan-completion-date">完了日</th>
                         <th class="done-link-area"></th>
                         <th class="edit-link-area"></th>
