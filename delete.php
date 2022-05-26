@@ -7,4 +7,3 @@ delete_tasks($id);
 // リダイレクト
 header('Location: index.php');
 exit;
-?>

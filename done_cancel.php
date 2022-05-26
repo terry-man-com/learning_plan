@@ -5,4 +5,3 @@ $id = filter_input(INPUT_GET, 'id');
 update_date_to_incomplete($id);
 header('Location: index.php');
 exit;
-?>

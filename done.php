@@ -6,4 +6,3 @@ $id = filter_input(INPUT_GET, 'id');
 update_date_to_finish($id);
 header('Location: index.php');
 exit;
-?>
