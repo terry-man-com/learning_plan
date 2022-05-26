@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* 共通部分
+---------------------------*/
+html {
+    font-size: 100%;
+    min-height: 100%;
+}
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    background: linear-gradient(to bottom, #2809f2,#97cdf3);
+}
+h1,
+h2 {
+    text-align: center;
+}
+h2 {
+    margin: 10px;
+    letter-spacing: 2rem;
+    text-indent: 2rem;
+    border-bottom: 1px solid #b8b4b4;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    width: 1000px;
+    margin: 30px auto;
+    padding: 40px 50px;
+}
+/* エラーメッセージ */
+.errors {
+    color: #f20c10;
+    background-color: #f1c8ad;
+    list-style: none;
+    margin: 20px 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+/* フォーム */
+.form-area,
+.incomplete-area,
+.complete-area,
+.edit-area {
+    background-color: #ffffff;
+    border: 1px solid;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.form-area {
+    padding: 30px;
+}
+.title {
+    color: #ffffff;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}   
+input[type="text"],
+input[type="date"] {
+    background-color: #ffffff;
+    border: 1px solid #b8b4b4;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* フォームのボタン */
+.btn {
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.submit-btn,
+.update-btn {
+    color: #ffffff;
+    background-color: #f30dc5;
+    letter-spacing: 2rem;
+    text-indent: 2rem;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.submit-btn:hover,
+.update-btn:hover {
+    background-color: #b069a2;
+}
+/* table全体 */
+.plan-list {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 10px 50px;
+}
+/* 完了期限が切れた時の日付の色 */
+.expired {
+    color: #e70b0f;
+}
+/* table 幅 */
+.plan-due-date,
+.plan-completion-date {
+    width: 17%;
+}
+
+.done-link-area,
+.edit-link-area,
+.delete-link-area {
+    width: 11%;
+}
+
+/* 未達成・完了エリアのボタン */
+.done-btn,
+.edit-btn,
+.delete-btn,
+.incom-btn {
+    font-weight: bold;
+    height: 40px;
+    padding-top: 7px;
+    width: 100%;
+}
+.done-btn {
+    background-color: #260ade;
+}
+.edit-btn {
+    background-color: #f2a409;
+}
+.delete-btn {
+    background-color: #e70b0f;
+}
+.incom-btn {
+    background-color: #14d10a;
+}
+.done-btn:hover {
+    background-color: #6f5fd7;
+}
+.edit-btn:hover {
+    background-color: #f1c8ad;
+}
+.delete-btn:hover {
+    background-color: #d46567;
+}
+.incom-btn:hover {
+    background-color: #8cbf8a;
+}
+/* 編集ページ */
+.edit-area {
+    padding: 30px;
+}
+.return-btn {
+    display: block;
+    color: #ffffff;
+    background-color: #260ade;
+    letter-spacing: 2rem;
+    text-indent: 2rem;
+    height: 40px;
+    margin-top: 15px;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+.return-btn:hover {
+    background-color: #6b5ad8;
+}
+/* レスポンシブ対応
+--------------------------------*/
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 700px;
+    }
+    .plan-list {
+        padding: 10px 30px;
+    }
+    .plan-due-date,
+    .plan-completion-date {
+        width: 25%;
+    }
+    
+    .done-link-area,
+    .edit-link-area,
+    .delete-link-area {
+        width: 15%;
+    }
+    .done-btn,
+    .edit-btn,
+    .delete-btn {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 550px;
+        margin: 30px;
+        padding: 20px 0;
+    }
+    .plan-list {
+        padding: 20px;
+    }
+    .plan-due-date,
+    .plan-completion-date {
+    width: 120px;
+    }
+    .done-link-area,
+    .edit-link-area,
+    .delete-link-area {
+        width: 75px;
+    }
+    .done-btn,
+    .edit-btn,
+    .delete-btn,
+    .incom-btn {
+        width: 100%;
+    }
+
+}
